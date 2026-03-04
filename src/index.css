@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer components {
+  .btn-inactive {
+    @apply bg-[#252f3f] text-slate-200 transition-all duration-200;
+    box-shadow: 
+      3px 3px 8px rgba(0, 0, 0, 0.3),
+      -1px -1px 3px rgba(255, 255, 255, 0.05),
+      inset 1px 1px 1px rgba(255, 255, 255, 0.1);
+  }
+  .btn-inactive:hover {
+    @apply bg-[#2c3749] text-white;
+    transform: translateY(-1px);
+  }
+  
+  .btn-active {
+    @apply bg-[#11161f] text-[#00b87c] transition-all duration-200;
+    box-shadow: 
+      inset 3px 3px 8px rgba(0, 0, 0, 0.6),
+      inset -1px -1px 3px rgba(255, 255, 255, 0.02);
+  }
+
+  .btn-primary {
+    @apply bg-[#00b87c] text-white transition-all duration-200;
+    box-shadow: 
+      3px 3px 10px rgba(0, 184, 124, 0.2),
+      inset 1px 1px 2px rgba(255, 255, 255, 0.2);
+  }
+  .btn-primary:hover {
+    @apply bg-[#00c988];
+    transform: translateY(-1px);
+    box-shadow: 
+      4px 4px 12px rgba(0, 184, 124, 0.3),
+      inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+  }
+
+  .input-3d {
+    @apply w-full bg-[#11161f] border border-[#252f3f] rounded-xl px-4 py-3 text-slate-200 outline-none transition-all duration-200 focus:border-[#00b87c]/50;
+    box-shadow: inset 2px 2px 6px rgba(0,0,0,0.5);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-[#252f3f] rounded-full;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#37455c];
+  }
+}

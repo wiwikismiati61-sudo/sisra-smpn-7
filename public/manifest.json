@@ -1,0 +1,21 @@
+{
+  "name": "SISRA SMPN 7",
+  "short_name": "SISRA",
+  "description": "Sistem Informasi Sekolah Ramah Anak SMPN 7",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "icons": [
+    {
+      "src": "https://image2url.com/r2/default/images/1772635041239-5398e0e9-6dab-43c9-bdc7-6ea6097291f9.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://image2url.com/r2/default/images/1772635041239-5398e0e9-6dab-43c9-bdc7-6ea6097291f9.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
