@@ -5,6 +5,7 @@ import { AppLink } from './types';
 
 const DEFAULT_LINKS: AppLink[] = [
   { id: 'home', title: 'KILAS SISRA SMPN 7', url: 'internal://home' },
+  { id: 'dispensasi', title: 'Dispensasi Siswa', url: 'https://dispensasi-siswa-9zak.vercel.app/' },
 ];
 
 export default function App() {
